@@ -1,27 +1,24 @@
-import React from "react";
+import React, { useState } from 'react';
 
-function ItemCount () {
-	return (
-		<>	
-		<div class="selector">
-		  <button (click)="decrementar()">-</button>  
-		  <div class="valor"> </div>
-		  <button (click)="incrementar()">+</button>
-		</div>
-		<Incremento />
-		<Decremento />
-		</>
-		)
+function ItemCount() {
+
+  const [count, setCount] = useState(0);
+  const stock = count < 5
+  
+
+  
+  return (
+    <div>
+      <p>Cantidad de clicks: {count}</p>
+      <button onClick={ () => setCount(count + 1 ) }>
+        Incremento
+      </button>
+      <button onClick={() => setCount (count - 1)}>
+      Decremento
+      </button>
+    </div>
+  );
 }
-
-function Incremento (){
-	if ("click")
-
-}
-
-function Decremento (){
-
-}
-
 
 export default ItemCount;
+

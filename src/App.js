@@ -3,13 +3,16 @@ import './App.css';
 import NavBar from './NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from "./ItemListContainer"
+import ItemCount from "./ItemCount.js"
+
 
 function App() {
   return ( 
     <>
     <NavBar />
-    <ItemListContainer />
-    <ItemCount />
+    <ItemListContainer /> 
+    <ItemCount
+    stock="5" />
     </>  
   );
 }
