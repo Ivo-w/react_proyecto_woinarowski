@@ -1,20 +1,17 @@
-import React from "react";
+import React, {datos} from "react";
+import ItemList from "./ItemList"
+import Item from "./Item"
+
+
 
 function ItemListContainer () {
 	return (
 	<>
-	<div>
-	 <ul>
-	  <li></li>
-	 </ul>
-	</div>
+
+	<ItemList />
+
 	</>
 	);
   }
-
-/*
-ItemListContainer.defaultProps = {
-	nombre = 'Coder'
-};*/
 
 export default ItemListContainer;

@@ -40,3 +40,13 @@
   height: 20px;
   width: 100%;
 }
+.cardEstilo{
+  height: 300px;
+  width:300px ;
+}
+.tamanioCard{
+  width:25%;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right:15px ;
+}

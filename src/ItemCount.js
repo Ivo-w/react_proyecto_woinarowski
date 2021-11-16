@@ -8,6 +8,7 @@ function ItemCount() {
 
   
   return (
+    <>
     <div>
       <p>Cantidad de clicks: {count}</p>
       <button onClick={ () => setCount(count + 1 ) }>
@@ -17,6 +18,7 @@ function ItemCount() {
       Decremento
       </button>
     </div>
+    </>
   );
 }
 
